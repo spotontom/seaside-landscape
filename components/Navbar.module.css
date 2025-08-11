@@ -1,0 +1,19 @@
+
+.header{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e5e7eb}
+.row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px;color:var(--blue)}
+.logo{border-radius:8px}
+.nav{display:none;gap:22px}
+.link{font-weight:700}
+.link:hover{color:var(--gold)}
+.cta{margin-left:12px;border-radius:12px;background:var(--blue);color:#fff;padding:10px 14px;font-weight:800;font-size:14px;border:1px solid rgba(0,0,0,.05)}
+.burger{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid #e5e7eb;background:#fff}
+.burger span{display:block;width:18px;height:2px;background:#111;position:relative}
+.burger span:before,.burger span:after{content:"";position:absolute;width:18px;height:2px;background:#111;left:0}
+.burger span:before{top:-6px}.burger span:after{top:6px}
+@media(min-width:768px){.nav{display:flex}.burger{display:none}}
+
+/* Mobile menu */
+.mobile{position:fixed;top:60px;left:0;right:0;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;flex-direction:column;padding:10px 20px;gap:12px}
+.mobile a{padding:10px 0;border-bottom:1px dashed #eee}
+.mobile a:last-child{border-bottom:none}
